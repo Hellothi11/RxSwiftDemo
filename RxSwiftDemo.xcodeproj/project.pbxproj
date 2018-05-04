@@ -16,6 +16,11 @@
 		807C2525209C182D007BCD80 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C2524209C182D007BCD80 /* APIService.swift */; };
 		807C2527209C186C007BCD80 /* APIInputBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C2526209C186C007BCD80 /* APIInputBase.swift */; };
 		807C2529209C1882007BCD80 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C2528209C1882007BCD80 /* APIError.swift */; };
+		809014AE209C427700A2B717 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809014AD209C427700A2B717 /* URLs.swift */; };
+		809014B0209C428A00A2B717 /* UserAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809014AF209C428A00A2B717 /* UserAPIService.swift */; };
+		809014B6209C433900A2B717 /* ListUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809014B5209C433900A2B717 /* ListUserModel.swift */; };
+		809014B9209C44DD00A2B717 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809014B8209C44DD00A2B717 /* UserListViewController.swift */; };
+		809014BB209C44FF00A2B717 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809014BA209C44FF00A2B717 /* UserListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		807C2524209C182D007BCD80 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		807C2526209C186C007BCD80 /* APIInputBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInputBase.swift; sourceTree = "<group>"; };
 		807C2528209C1882007BCD80 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		809014AD209C427700A2B717 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		809014AF209C428A00A2B717 /* UserAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIService.swift; sourceTree = "<group>"; };
+		809014B5209C433900A2B717 /* ListUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserModel.swift; sourceTree = "<group>"; };
+		809014B8209C44DD00A2B717 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		809014BA209C44FF00A2B717 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		C8C81F4F73E83E4721E30FB1 /* Pods-RxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D284811A73DC31B77EC7DE61 /* Pods_RxSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7422C1E24A5C4C99ED80FBB /* Pods-RxSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,9 +77,11 @@
 		807C250F209C1035007BCD80 /* RxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				809014B3209C431700A2B717 /* ViewModels */,
+				809014B2209C431300A2B717 /* Views */,
+				809014B1209C430B00A2B717 /* Models */,
 				807C2522209C17EE007BCD80 /* API */,
 				807C2510209C1035007BCD80 /* AppDelegate.swift */,
-				807C2512209C1035007BCD80 /* ViewController.swift */,
 				807C2514209C1035007BCD80 /* Main.storyboard */,
 				807C2517209C1035007BCD80 /* Assets.xcassets */,
 				807C2519209C1035007BCD80 /* LaunchScreen.storyboard */,
@@ -82,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				807C2523209C180B007BCD80 /* Core */,
+				809014AD209C427700A2B717 /* URLs.swift */,
+				809014AF209C428A00A2B717 /* UserAPIService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -94,6 +108,47 @@
 				807C2528209C1882007BCD80 /* APIError.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		809014B1209C430B00A2B717 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				809014B4209C432800A2B717 /* Network */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		809014B2209C431300A2B717 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				809014B7209C44BE00A2B717 /* ViewControllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		809014B3209C431700A2B717 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				809014BA209C44FF00A2B717 /* UserListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		809014B4209C432800A2B717 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				809014B5209C433900A2B717 /* ListUserModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		809014B7209C44BE00A2B717 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				807C2512209C1035007BCD80 /* ViewController.swift */,
+				809014B8209C44DD00A2B717 /* UserListViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		EF123EC055DD93E394DE4A43 /* Frameworks */ = {
@@ -235,10 +290,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				807C2513209C1035007BCD80 /* ViewController.swift in Sources */,
+				809014AE209C427700A2B717 /* URLs.swift in Sources */,
+				809014B6209C433900A2B717 /* ListUserModel.swift in Sources */,
 				807C2525209C182D007BCD80 /* APIService.swift in Sources */,
 				807C2527209C186C007BCD80 /* APIInputBase.swift in Sources */,
+				809014B9209C44DD00A2B717 /* UserListViewController.swift in Sources */,
 				807C2529209C1882007BCD80 /* APIError.swift in Sources */,
+				809014B0209C428A00A2B717 /* UserAPIService.swift in Sources */,
 				807C2511209C1035007BCD80 /* AppDelegate.swift in Sources */,
+				809014BB209C44FF00A2B717 /* UserListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
