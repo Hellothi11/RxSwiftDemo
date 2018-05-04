@@ -7,4 +7,9 @@ target 'RxSwiftDemo' do
 
   # Pods for RxSwiftDemo
 
+	pod 'RxSwift', '~> 4.0'
+    pod 'RxCocoa', '~> 4.0'
+    pod 'Alamofire', '~> 4.7'
+    pod 'RxAlamofire'
+    pod "Himotoki", "~> 3.1"
 end
